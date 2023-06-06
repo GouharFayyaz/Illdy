@@ -1,0 +1,1811 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>illdy</title>
+    <link rel="stylesheet" href="illdy.css">
+    <link rel="stylesheet" href="illdymediaquery.css">
+    <script src="https://kit.fontawesome.com/9bd0a057cd.js" crossorigin="anonymous"></script>
+
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        list-style: none;
+        border: none;
+        /* border: 1px solid red; */
+        font-family: cursive;
+        overflow-x: hidden;
+    }
+
+    .container {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    .section1 {
+        background-image: url(./front-page-header.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 950px;
+        width: 100%;
+        /* background-size: 100% 100%; */
+        /* background-attachment: fixed; */
+    }
+
+    .navbar {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+    }
+
+    .logo {
+        width: 40%;
+        height: 100%;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .nav-logo {
+        width: 190px;
+        height: 10%;
+        padding-top: 15px;
+        object-fit: cover;
+    }
+
+    .navbar>ul {
+        list-style: none;
+        padding-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        color: aliceblue;
+        font-size: 100%;
+
+    }
+
+    .navbar>ul>li {
+        padding: 30px 15px 0px 15px;
+    }
+
+    .navbar>ul>li:hover {
+        color: yellow;
+        cursor: pointer;
+    }
+
+    .section1>h1 {
+        font-size: 500%;
+        color: white;
+        text-align: center;
+        padding-top: 230px;
+        overflow-y: hidden;
+    }
+
+    .section1>p {
+        font-size: 110%;
+        color: white;
+        text-align: center;
+        padding-top: 30px;
+    }
+
+    .btn1 {
+        background-color: transparent;
+        border: 3px solid white;
+        border-radius: 6px;
+        padding: 20px 80px;
+        color: white;
+        font-size: large;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+    }
+
+    .btn1:hover {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0));
+    }
+
+    .btn2 {
+        background-color: rgb(230, 230, 17);
+        border-radius: 6px;
+        padding: 20px 90px;
+        color: white;
+        margin-left: 30px;
+        font-size: large;
+    }
+
+    .btn2:hover {
+        background-color: rgb(160, 68, 160);
+    }
+
+    .buttons {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        padding-top: 90px;
+    }
+
+    .section2 {
+        display: flex;
+        width: 70%;
+        justify-content: center;
+    }
+
+    .para2 {
+        justify-content: center;
+        justify-items: start;
+    }
+
+
+    .section2>.para2>h1 {
+        text-align: center;
+        color: rgb(70, 67, 67);
+        font-size: 280%;
+        padding: 60px 0px;
+    }
+
+    .section2>.para2>p {
+        text-align: center;
+        color: gray;
+    }
+
+    .bars {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        /* height: 220px; */
+        overflow-y: hidden;
+        padding-bottom: 50px;
+    }
+
+    .barbox {
+        width: 33.3%;
+        height: 100%;
+        overflow-y: hidden;
+
+    }
+
+    .bar1 {
+        width: 47%;
+        background-color: rgb(243, 63, 63);
+        margin-left: 10%;
+        margin-top: 20%;
+        border: 2px solid rgb(243, 63, 63);
+    }
+
+    .dot1 {
+        width: 1px;
+        background-color: rgb(243, 63, 63);
+        border: 6px solid rgb(243, 63, 63);
+        border-radius: 6px;
+        margin-left: 55%;
+        margin-top: -7px;
+    }
+
+    .row1 {
+        border: 1px solid rgb(105, 101, 101);
+        width: 30%;
+        margin-left: 57.5%;
+        margin-top: -8px;
+    }
+
+
+    .clip {
+        height: 70px;
+        width: 15%;
+        text-align: center;
+        background-color: rgb(243, 63, 63);
+        clip-path: polygon(0% 0%, 100% 0, 100% 38%, 57% 38%, 49% 47%, 41% 38%, 0 38%);
+        margin-top: -37px;
+        margin-left: 49%;
+        color: white;
+    }
+
+    .para4 {
+        font-style: italic;
+        color: rgb(243, 63, 63);
+        margin-left: 50px;
+    }
+
+    .para5 {
+        color: rgb(243, 63, 63);
+        margin-left: 90px;
+        margin-top: -25px;
+    }
+
+    .bar2 {
+        width: 61%;
+        margin-left: 10%;
+        margin-top: 20%;
+        background-color: rgb(219, 219, 25);
+        border: 2px solid rgb(219, 219, 25);
+    }
+
+    .dot2 {
+        width: 1px;
+        background-color: rgb(219, 219, 25);
+        border: 6px solid rgb(219, 219, 25);
+        border-radius: 6px;
+        margin-left: 70%;
+        margin-top: -7px;
+    }
+
+    .row2 {
+        border: 1px solid rgb(105, 101, 101);
+        width: 15%;
+        margin-left: 73%;
+        margin-top: -8px;
+    }
+
+
+    .clip2 {
+        height: 70px;
+        width: 15%;
+        text-align: center;
+        background-color: rgb(219, 219, 25);
+        clip-path: polygon(0% 0%, 100% 0, 100% 38%, 57% 38%, 49% 47%, 41% 38%, 0 38%);
+        margin-top: -37px;
+        margin-left: 64%;
+        color: white;
+    }
+
+    .para6 {
+        font-style: italic;
+        color: rgb(219, 219, 25);
+        margin-left: 50px;
+    }
+
+    .para7 {
+        color: rgb(219, 219, 25);
+        margin-left: 90px;
+        margin-top: -25px;
+    }
+
+    .bar3 {
+        width: 67%;
+        margin-left: 10%;
+        margin-top: 20%;
+        background-color: rgb(160, 68, 160);
+        border: 2px solid rgb(160, 68, 160);
+    }
+
+    .dot3 {
+        width: 1px;
+        background-color: rgb(160, 68, 160);
+        border: 6px solid rgb(160, 68, 160);
+        border-radius: 6px;
+        margin-left: 74.5%;
+        margin-top: -7px;
+    }
+
+    .row3 {
+        border: 1px solid rgb(105, 101, 101);
+        width: 12%;
+        margin-left: 76.5%;
+        margin-top: -8px;
+    }
+
+
+    .clip3 {
+        height: 70px;
+        width: 15%;
+        text-align: center;
+        background-color: rgb(160, 68, 160);
+        clip-path: polygon(0% 0%, 100% 0, 100% 38%, 57% 38%, 49% 47%, 41% 38%, 0 38%);
+        margin-top: -37px;
+        margin-left: 68.5%;
+        color: white;
+    }
+
+    .para8 {
+        /* font-style: italic; */
+        color: rgb(160, 68, 160);
+        margin-left: 50px;
+    }
+
+    .para9 {
+        color: rgb(160, 68, 160);
+        margin-left: 90px;
+        margin-top: -25px;
+    }
+
+    .section3 {
+        background-color: rgb(231, 231, 236);
+        height: 190px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .section3>h1 {
+        color: rgb(71, 69, 69);
+        padding-top: 50px;
+        font-size: 250%;
+    }
+
+    .section3>p {
+        color: gray;
+        padding-top: 10px;
+    }
+
+    .picdiv {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .pics:hover {
+        filter: opacity(60%);
+        transition-duration: 0.5s;
+    }
+
+    .classone {
+        display: flex;
+        width: 49.9%;
+        flex-direction: row;
+    }
+
+    .section4 {
+        position: relative;
+        height: 800px;
+        width: 100%;
+        overflow-y: hidden;
+        background-image: linear-gradient(rgba(156, 59, 180, 0.562), rgba(70, 47, 116, 0.078)), url(./pine-watt-2Hzmz15wGik-unsplash.jpg);
+        background-size: 100% 100%;
+    }
+
+    .section4>h1 {
+        color: white;
+        font-size: 260%;
+        text-align: center;
+        padding-top: 50px;
+        overflow-y: hidden;
+    }
+
+    .box100 {
+        width: 70%;
+        position: relative;
+        margin-left: 15%;
+        padding-top: 40px;
+        overflow: hidden;
+    }
+
+    .box105 {
+        width: 400%;
+        position: relative;
+        height: 100%;
+        transition-duration: 0.3s;
+    }
+
+    .box106 {
+        height: 100%;
+        width: 25%;
+        float: left;
+        position: relative;
+    }
+
+    .box10 {
+        height: 120px;
+        width: 120px;
+        border-radius: 100px;
+        background-image: url(./front-page-team-3.jpg);
+        background-size: 100% 100%;
+        position: relative;
+        left: 43%;
+    }
+
+    .part2 {
+        background-image: url(./hombre-joven-cara-alegre-estudiante-127x127.jpg);
+    }
+
+    .part3 {
+        background-image: url(./Aigars-Silkalns-127x127.jpg);
+    }
+
+    .part4 {
+        background-image: url(./redhead-1123645_960_720-1-127x127.jpg);
+    }
+
+    .box12 {
+        clip-path: polygon(0% 0%, 100% 0%, 100% 30%, 54% 30%, 49% 44%, 43% 30%, 0 30%);
+        height: 450px;
+        width: 100%;
+        background-color: rgb(126, 64, 155);
+        margin-top: 5%;
+    }
+
+    .box12>p {
+        padding: 10px 50px;
+    }
+
+    .box106>h1 {
+        color: white;
+        font-size: 160%;
+        bottom: 32%;
+        left: 42%;
+        position: absolute;
+        text-align: center;
+    }
+
+    .room1:checked~.box105 {
+        left: 0%;
+    }
+
+    .room2:checked~.box105 {
+        left: -100%;
+    }
+
+    .room3:checked~.box105 {
+        left: -200%;
+    }
+
+    .room4:checked~.box105 {
+        left: -300%;
+    }
+
+    .labelx {
+        background-color: white;
+        padding: 6px 6px;
+        border-radius: 10px;
+        position: absolute;
+        transition-duration: 0.5s;
+        top: 75%;
+        z-index: 1;
+    }
+
+    .labelx:hover {
+        cursor: pointer;
+    }
+
+    .lbone {
+        left: 44.5%;
+    }
+
+    .lbtwo {
+        left: 47%;
+    }
+
+    .lbthree {
+        left: 49.5%;
+    }
+
+    .lbfour {
+        left: 52%;
+    }
+
+    .box100>input {
+        display: none;
+    }
+
+    .section4>.box100>input:checked+label {
+        background-color: transparent;
+        border: 1px solid white;
+    }
+
+    .section5 {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .newclass {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    .section5>.newclass>h1 {
+        color: rgb(71, 69, 69);
+        font-size: 230%;
+    }
+
+    .section5>.newclass>p {
+        color: gray;
+        padding-top: 5px;
+        text-align: center;
+    }
+
+    .class2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 93%;
+        margin-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .card1 {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .two {
+        color: rgb(190, 41, 41);
+        font-size: 300%;
+        text-align: center;
+    }
+
+    .card1>h1 {
+        color: rgb(190, 41, 41);
+        font-size: 180%;
+        padding: 20px 0px;
+    }
+
+    .card1>p {
+        color: gray;
+    }
+
+    .card2 {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .size {
+        font-size: 250%;
+        color: yellow;
+    }
+
+    .card2>h1 {
+        color: yellow;
+        font-size: 180%;
+        padding: 20px 0px;
+    }
+
+    .size2 {
+        color: gray;
+    }
+
+    .card3 {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .fa-magnifying-glass {
+        color: rgb(65, 25, 65);
+        font-size: 300%;
+        text-align: center;
+    }
+
+    .card3>h1 {
+        color: rgb(190, 41, 41);
+        font-size: 180%;
+        padding: 20px 0px;
+    }
+
+    .card3>p {
+        color: gray;
+    }
+
+    .section6 {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(31, 16, 75);
+    }
+
+    .class3 {
+        justify-content: center;
+        text-align: center;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .class3>h1 {
+        color: white;
+    }
+
+    .class3>p {
+        color: grey;
+    }
+
+    .section6>button {
+        padding: 10px;
+        width: 120px;
+        border-radius: 7px;
+        background-color: yellow;
+        font-size: 100%;
+        text-align: center;
+    }
+
+    .section6>button:hover {
+        background-color: blueviolet;
+    }
+
+    .class4 {
+        display: flex;
+        flex-direction: row;
+        padding-top: 70px;
+        width: 88%;
+        justify-content: space-evenly;
+        padding-bottom: 150px;
+    }
+
+    .card4 {
+        background-color: white;
+    }
+
+    .card4>h1 {
+        color: rgb(78, 74, 74);
+        padding: 30px 25px;
+        font-size: 150%;
+    }
+
+    .card4>h1:hover {
+        color: yellow;
+    }
+
+    .card4>p {
+        color: grey;
+        padding: 0px 25px;
+    }
+
+    .para21 {
+        padding: 40px 25px;
+        padding-left: 25px;
+        padding-top: 40px;
+    }
+
+    .para20 {
+        color: yellow;
+        font-size: 110%;
+    }
+
+    .para20:hover {
+        color: blueviolet;
+    }
+
+    .section7 {
+        display: flex;
+        background-image: url(./front-page-counter.jpg);
+        background-attachment: fixed;
+        background-size: 100% 100%;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .card10 {
+        color: white;
+        padding: 40px 15px;
+        text-align: center;
+        /* border: 1px solid #000; */
+    }
+
+    .card10>h1 {
+        font-size: 470%;
+    }
+
+    .card10>p {
+        font-size: 140%;
+        font-weight: bolder;
+    }
+
+    .hr1 {
+        color: white;
+        border: 1px solid white;
+        height: 2px;
+        width: 200px;
+        transform: rotate(90deg);
+        position: absolute;
+        margin-top: 7%;
+        left: 440px;
+    }
+
+    .hr2 {
+        left: 850px;
+    }
+
+    .section8 {
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(219, 210, 210);
+        width: 100%;
+    }
+
+    .class40 {
+        width: 100%;
+        text-align: center;
+        padding-top: 90px;
+    }
+
+    .class40>h1 {
+        font-size: 290%;
+        color: rgb(68, 66, 66);
+    }
+
+    .class40>p {
+        font-size: 110%;
+        color: gray;
+        padding-top: 15px;
+    }
+
+    .class41 {
+        display: flex;
+        flex-direction: row;
+        padding-top: 80px;
+        justify-content: space-evenly;
+        width: 100%;
+        padding-bottom: 120px;
+        /* border: 1px solid #000; */
+    }
+
+    .card15 {
+        display: flex;
+        flex-direction: row;
+        /* border: 1px solid #000; */
+    }
+
+    .class46 {
+        /* border: 1px solid #000; */
+        padding-left: 20px;
+    }
+
+    .pic5 {
+        height: 150px;
+        width: 150px;
+        border-radius: 100px;
+        overflow-y: hidden;
+        margin-top: 50px;
+    }
+
+    .pic5>img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .class46>h1 {
+        color: rgb(65, 63, 63);
+        font-size: 180%;
+        padding-top: 50px;
+    }
+
+    .p10 {
+        color: red;
+        font-weight: bold;
+        padding-top: 15px;
+    }
+
+    .p11 {
+        color: gray;
+        font-weight: bold;
+        padding-top: 30px;
+    }
+
+    .circle {
+        height: 25px;
+        width: 25px;
+        border: 1px solid red;
+        border-radius: 15px;
+        overflow-y: hidden;
+        color: red;
+        text-align: center;
+        padding-top: 4px;
+        float: left;
+        margin-left: 10px;
+        margin-top: 15px;
+        font-weight: bold;
+    }
+
+    .tenten {
+        color: yellow;
+    }
+
+    .ten {
+        color: yellow;
+        border: 1px solid yellow;
+    }
+
+    .eleveneleven {
+        color: purple;
+    }
+
+    .eleven {
+        color: purple;
+        border: 1px solid purple;
+    }
+
+    .section9 {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+
+    .class47 {
+        color: gray;
+    }
+
+    .class47>h1 {
+        font-size: 270%;
+        padding: 50px 0px;
+    }
+
+    .class48 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding-bottom: 50px;
+    }
+
+    .class51 {
+        flex-direction: row;
+        display: flex;
+        width: 55%;
+        justify-content: space-between;
+    }
+
+    .card20 {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .card21 {
+        color: yellow;
+        font-size: 130%;
+        border-right: 1px solid white;
+    }
+
+    .card22 {
+        text-align: left;
+        color: rgb(107, 104, 104);
+        font-size: 115%;
+    }
+
+    .class49 {
+        color: gray;
+        font-size: 150%;
+    }
+
+    .class49>p {
+        padding-top: 20px;
+    }
+
+    .class50 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .class50>input {
+        height: 45px;
+        font-size: 18px;
+        border: 1px solid gray;
+        width: 33.3%;
+    }
+
+    .class54 {
+        width: 85%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .class52 {
+        flex-direction: row;
+        color: gray;
+        font-size: 110%;
+        width: 28%;
+        text-align: left;
+    }
+
+    .class52>input {
+        height: 45px;
+        font-size: 18px;
+        border: 1px solid gray;
+        width: 100%;
+    }
+
+    .class55 {
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+    }
+
+    .class53 {
+        width: 85%;
+        flex-direction: row;
+        color: gray;
+        font-size: 110%;
+        text-align: left;
+    }
+
+    .class56 {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 70px;
+    }
+
+    .class57 {
+        display: flex;
+        width: 85%;
+        justify-content: right;
+    }
+
+    .class53>input {
+        height: 200px;
+        width: 100%;
+        font-size: 18px;
+        border: 1px solid gray;
+    }
+
+    .class57>button {
+        height: 45px;
+        width: 170px;
+        background: yellow;
+        color: white;
+        border: none;
+        border-radius: 7px;
+        margin-top: 35px;
+        font-size: 18px;
+        cursor: pointer;
+
+    }
+
+    .class57>button:hover {
+        background-color: blueviolet;
+    }
+
+    .section10 {
+        display: flex;
+        background-color: rgb(37, 36, 36);
+        width: 100%;
+        padding: 40px 0px;
+    }
+
+    .class60 {
+        display: flex;
+        width: 60%;
+        justify-content: space-between;
+        padding-left: 130px;
+    }
+
+    .card25>h1 {
+        color: white;
+        font-weight: bolder;
+        font-size: 200%;
+        padding-bottom: 30px;
+    }
+
+    .class60>.card25>ul>li {
+        list-style-type: circle;
+        list-style: visible;
+        font-size: 110%;
+        color: gray;
+        line-height: 45px;
+    }
+
+    .card25>ul>li:hover {
+        color: blueviolet;
+    }
+
+    .section11 {
+        display: flex;
+        justify-content: center;
+        color: white;
+        background-color: rgb(26, 25, 25);
+        font-weight: bolder;
+        width: 100%;
+        line-height: 85px;
+        font-size: 120%;
+        text-align: center;
+    }
+
+    @media screen and (max-width: 768px) {
+        .navbar>ul>li {
+            display: none;
+        }
+
+
+        .section1 {
+            height: 500px;
+        }
+
+        .section1>h1 {
+            font-size: 300%;
+            padding-top: 80px;
+        }
+
+        .buttons {
+            padding-top: 40px;
+        }
+
+        .para2 {
+            width: 95%;
+        }
+
+        .section2 {
+            width: 100%;
+        }
+
+        .bars {
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .barbox {
+            width: 98%;
+        }
+
+        .picdiv {
+            flex-direction: column;
+        }
+
+        .classone {
+            width: 100%;
+        }
+
+        .box12 {
+            height: 680px;
+        }
+
+        .lbone {
+            left: 40.5%;
+        }
+
+        .lbtwo {
+            left: 44%;
+        }
+
+        .lbthree {
+            left: 48.5%;
+        }
+
+        .lbfour {
+            left: 52%;
+        }
+
+        .box10 {
+            left: 35%;
+        }
+
+        .box106>h1 {
+            left: 35%;
+        }
+
+
+
+        .class2 {
+            flex-direction: column;
+            width: 100%;
+            align-items: center;
+        }
+
+        .card1 {
+            width: 90%;
+            padding-bottom: 20px;
+        }
+
+        .card2 {
+            width: 90%;
+            padding-bottom: 28px;
+        }
+
+        .card3 {
+            width: 90%;
+            padding-bottom: 20px;
+        }
+
+        .class4 {
+            flex-direction: column;
+            width: 95%;
+        }
+
+        .pic1>img {
+            width: 100%;
+            height: 200px;
+        }
+
+        .pic2>img {
+            width: 100%;
+            height: 200px;
+        }
+
+        .pic3>img {
+            width: 100%;
+            height: 200px;
+        }
+
+        .card4 {
+            margin-bottom: 30px;
+        }
+
+        .section7 {
+            flex-direction: column;
+        }
+
+        .hr1 {
+            display: none;
+        }
+
+        .hr2 {
+            display: none;
+        }
+
+        .class41 {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .class3 {
+            width: 90%;
+        }
+
+        .class51 {
+            flex-direction: column;
+            width: 80%;
+            padding-bottom: 20px;
+        }
+
+        .class48 {
+            flex-direction: column;
+            padding-left: 10px;
+        }
+
+        .class49 {
+            text-align: left;
+            padding-left: 10px;
+        }
+
+
+
+        .class54 {
+            flex-direction: column;
+
+        }
+
+        .class52 {
+            padding-bottom: 20px;
+            width: 100%;
+        }
+
+        .class60 {
+            flex-direction: column;
+            padding-left: 40px;
+        }
+
+        .card25 {
+            padding-bottom: 20px;
+        }
+
+        .section11 {
+            line-height: 35px;
+        }
+
+
+    }
+
+
+
+
+    @media screen and (max-width: 576px) {
+        .section1 {
+            height: 580px;
+        }
+
+        .section1>h1 {
+            font-size: 300%;
+            padding-top: 40px;
+        }
+
+        .buttons {
+            padding-top: 40px;
+            flex-direction: column;
+            width: 50%;
+            margin-left: 150px;
+            align-items: center;
+        }
+
+        .btn2 {
+            margin-left: 0px;
+            margin-top: 10px;
+        }
+
+        .para2 {
+            width: 95%;
+        }
+    }
+
+    @media screen and (max-width: 320px) {
+
+        .section1>h1 {
+            font-size: 200%;
+            padding-top: 40px;
+        }
+
+        .buttons {
+            padding-top: 20px;
+            width: 100%;
+            margin-left: -1px;
+        }
+
+        .btn1 {
+            padding: 10px 60px;
+        }
+
+        .btn2 {
+            padding: 10px 70px;
+        }
+
+        .card15 {
+            flex-direction: column;
+        }
+
+        .box100 {
+            width: 100%;
+            margin-left: -1px;
+        }
+
+        .box12 {
+            height: 680px;
+            width: 100%;
+        }
+
+        .box10 {
+            margin-left: -30px;
+        }
+
+        .box106>h1 {
+            margin-left: -40px;
+        }
+
+        .lbone {
+            left: 30.5%;
+        }
+
+        .lbtwo {
+            left: 40%;
+        }
+
+        .lbthree {
+            left: 50.5%;
+        }
+
+        .lbfour {
+            left: 62%;
+        }
+
+
+
+
+    }
+</style>
+
+<body>
+
+    <div class="container">
+        <div class="section1">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="./cropped-footer-logo-1.png" alt="" class="nav-logo">
+                </div>
+
+                <ul>
+                    <li>About</li>
+                    <li>Portfolio</li>
+                    <li>Testimonials</li>
+                    <li>Services</li>
+                    <li>Blog</li>
+                    <li>Our Team</li>
+                    <li>Contact Us</li>
+                </ul>
+            </div>
+
+            <h1>Clean<span style="color: yellow;">.</span>Slick<span style="color: yellow;">.</span>Pixel Perfect</h1>
+            <p>lldy is a great one-page theme, perfect for developers and designers but also for someone who just wants
+                a<br> new website for his business. Try it now!</p>
+
+            <div class="buttons">
+                <button class="btn1">Learn more</button>
+                <button class="btn2">Download</button>
+            </div>
+
+
+        </div>
+
+        <div class="section2">
+
+            <div class="para2">
+                <h1>About</h1>
+                <p>It is an amazng one-page theme with great features that offers an incredible experience. It is easy
+                    to
+                    install, make changes, adapt for your business. A modern design with clean lines and styling for
+                    a
+                    wide
+                    variety of content, exactly how a business design should be. You can add<br> as many images as you
+                    want
+                    to
+                    the main header area and turn them into slider.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="bars">
+
+            <div class="barbox">
+                <div class="bar1"></div>
+                <div class="dot1"></div>
+                <hr class="row1">
+                <div class="clip">60%</div>
+                <p class="para4">A</p>
+                <p class="para5">Typography</p>
+            </div>
+
+            <div class="barbox">
+                <div class="bar2"></div>
+                <div class="dot2"></div>
+                <hr class="row2">
+                <div class="clip2">82%</div>
+                <p class="para6"><i class="fa-solid fa-pencil"></i></p>
+                <p class="para7">Design</p>
+            </div>
+
+            <div class="barbox">
+                <div class="bar3"></div>
+                <div class="dot3"></div>
+                <hr class="row3">
+                <div class="clip3">86%</div>
+                <p class="para8">{/></p>
+                <p class="para9">Development</p>
+            </div>
+
+        </div>
+
+        <div class="section3">
+            <h1>Projects</h1>
+            <p>You'll love our work. Check it out!</p>
+        </div>
+
+        <div class="picdiv">
+            <div class="classone">
+                <img class="pics" src="./front-page-project-4.jpg" alt="">
+                <img class="pics" src="./front-page-project-3.jpg" alt="">
+            </div>
+            <div class="classone">
+                <img class="pics" src="./front-page-project-2.jpg" alt="">
+                <img class="pics" src="./front-page-project-1.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="section4">
+
+            <h1>Testimonials</h1>
+
+            <div class="box100">
+                <input type="radio" name="same1" id="one1" class="room1" checked>
+                <label class="labelx lbone" for="one1" aria-checked="true"></label>
+                <input type="radio" name="same1" id="two2" class="room2">
+                <label class="labelx lbtwo" for="two2"></label>
+                <input type="radio" name="same1" id="three3" class="room3">
+                <label class="labelx lbthree" for="three3"></label>
+                <input type="radio" name="same1" id="four4" class="room4">
+                <label class="labelx lbfour" for="four4"></label>
+
+                <div class="box105">
+                    <div class="box106 part5">
+                        <div class="box10"></div>
+                        <div class="box12">
+                            <p>" Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id felis rhoncus,
+                                ultrices
+                                dolor
+                                quis, faucibus velit. Interdum all our awesome testimonials! There are hundreds of our
+                                happy
+                                customers! Let's see what et malesuada fames ac ante ipsum primis in faucibus.Interdum
+                                all
+                                our awesome testimonials! There are hundreds of our happy
+                                customers!
+                            </p>
+                        </div>
+
+                        <h1>Mike Muller</h1>
+                    </div>
+
+
+                    <div class="box106 part6">
+                        <div class="box10 part2"></div>
+                        <div class="box12">
+                            <p>" Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id felis rhoncus,
+                                ultrices
+                                dolor
+                                quis, faucibus velit. Interdum all our awesome testimonials! There are hundreds of our
+                                happy
+                                customers!</p>
+                        </div>
+                        <h1>John Doe</h1>
+
+                    </div>
+
+                    <div class="box106 part7">
+                        <div class="box10 part3"></div>
+                        <div class="box12">
+                            <p>" Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id felis rhoncus,
+                                ultrices
+                                dolor
+                                quis, faucibus velit. Interdum all our awesome testimonials! There are hundreds of our
+                                happy
+                                customers! Let's see what et malesuada fames ac ante ipsum primis in faucibus.Interdum
+                                all
+                                our awesome testimonials! There are hundreds of our happy
+                                customers! Let's see what et malesuada fames ac ante ipsum primis in faucibus."
+                            </p>
+                        </div>
+                        <h1>Aigars Silkalns</h1>
+                    </div>
+
+
+                    <div class="box106 part8">
+                        <div class="box10 part4"></div>
+                        <div class="box12">
+                            <p>" Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id felis rhoncus,
+                                ultrices
+                                dolor
+                                quis, faucibus velit. Interdum all our awesome testimonials! There are hundreds of our
+                                happy
+                                customers! Let's see what et malesuada fames ac ante ipsum primis in faucibus.Interdum
+                                all
+                                our awesome testimonials! There are hundreds of our happy
+                                customers! Let's see what et malesuada fames ac ante ipsum primis in faucibus."
+                            </p>
+                        </div>
+                        <h1>Jane Smith</h1>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="section5">
+            <div class="newclass">
+                <h1>Services</h1>
+                <p>In order to help you grow your business, our carefully selected experts can advise you in in the
+                    following areas:</p>
+            </div>
+
+            <div class="class2">
+                <div class="card1">
+                    <i class="fa-solid fa-pencil two"></i>
+                    <h1>Web Design</h1>
+                    <p>Consectetur adipiscing elit. Praesent molestie urna hendrerit erat tincidunt tempus. Aliquam a
+                        leo
+                        risus. Fusce a metus non augue dapibus porttitor at in mauris. Pellentesque commodo...</p>
+                </div>
+
+                <div class="card2">
+                    <p class="size">{/></p>
+                    <h1>WEB DEVELOPMENT</h1>
+                    <p class="size2">Consectetur adipiscing elit. Praesent molestie urna hendrerit erat tincidunt
+                        tempus. Aliquam a
+                        leo
+                        risus. Fusce a metus non augue dapibus porttitor at in mauris. Pellentesque commodo...</p>
+                </div>
+
+
+                <div class="card3">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <h1>SEO Analisys</h1>
+                    <p>Consectetur adipiscing elit. Praesent molestie urna hendrerit erat tincidunt tempus. Aliquam a
+                        leo
+                        risus. Fusce a metus non augue dapibus porttitor at in mauris. Pellentesque commodo...</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="section6">
+
+            <div class="class3">
+                <h1>Latest News</h1>
+                <p>If you are interested in the latest articles in the industry, take a sneak peek at our blog. You have
+                    nothing to loose!</p>
+            </div>
+
+            <button> <i class="fa-solid fa-circle-chevron-right"></i> See Blog</button>
+
+            <div class="class4">
+                <div class="card4">
+                    <div class="pic1">
+                        <img src="./photo-1449168013943-3a15804bb41c-360x213.jpg" alt="">
+                    </div>
+                    <h1>We Have Made illdy<br>Theme SEO Friendly</h1>
+                    <p>Illdy One Page WordPress theme is fully<br> SEO friendly and is ready to help you to<br> achieve
+                        the
+                        highest rankings…</p>
+                    <div class="para21">
+                        <p class="para20">
+                            <i class="fa-solid fa-circle-chevron-right"></i>
+                            Read More
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card4 card5">
+                    <div class="pic2">
+                        <img src="./photo-1450101215322-bf5cd27642fc-360x213.jpg" alt="">
+                    </div>
+                    <h1>Stunning One Page<br> WordPress Theme For<br> Masses</h1>
+                    <p>This theme is not just free, it is free for<br> private and commercial use since it is<br>
+                        licensed
+                        under GPL…</p>
+                    <div class="para21">
+                        <p class="para20">
+                            <i class="fa-solid fa-circle-chevron-right"></i>
+                            Read More
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="card4 card6">
+                    <div class="pic3">
+                        <img src="./photo-1447687643809-e05fd462f350-360x213.jpg" alt="">
+                    </div>
+                    <h1>Hello World!</h1>
+                    <p>Welcome to colorlib.com. This is our first<br> post around Illdy WordPress theme. Now<br> show
+                        that
+                        you can make out of it.…</p>
+                    <div class="para21">
+                        <p class="para20">
+                            <i class="fa-solid fa-circle-chevron-right"></i>
+                            Read More
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="section7">
+
+            <div class="card10">
+                <h1>260</h1>
+                <p>PROJECTS</p>
+            </div>
+
+            <div class="card10">
+                <h1>120</h1>
+                <p>CLIENTS</p>
+            </div>
+
+            <div class="card10">
+                <h1>260</h1>
+                <p>COFFES</p>
+            </div>
+
+            <hr class="hr1">
+            <hr class="hr1 hr2">
+
+
+        </div>
+
+        <div class="section8">
+
+            <div class="class40">
+                <h1>Team</h1>
+                <p>Meet the people that are going to take your business to the next level.</p>
+            </div>
+
+            <div class="class41">
+                <div class="card15">
+
+                    <div class="class45">
+
+                        <div class="pic5">
+                            <img src="./front-page-team-1.jpg" alt="">
+                        </div>
+
+                    </div>
+
+                    <div class="class46">
+
+                        <h1>Mark Lawrance</h1>
+                        <p class="p10">Web Designer</p>
+                        <p class="p11">Creative, detail-oriented,<br> always focused.</p>
+
+                        <div class="circle">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </div>
+                        <div class="circle">
+                            <i class="fa-brands fa-twitter"></i>
+                        </div>
+                        <div class="circle">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="card15">
+                    <div class="class45">
+
+                        <div class="pic5">
+                            <img src="./front-page-team-2.jpg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="class46">
+
+                        <h1>Jane Stenton</h1>
+                        <p class="p10 tenten">SEO Specialist</p>
+                        <p class="p11">Curious, tech-geeck and gets<br> serious when it comes to work.</p>
+
+                        <div class="circle ten">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </div>
+                        <div class="circle ten">
+                            <i class="fa-brands fa-twitter"></i>
+                        </div>
+                        <div class="circle ten">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="card15">
+                    <div class="class45">
+                        <div class="pic5">
+                            <img src="./front-page-team-3.jpg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="class46">
+                        <h1>John Smith</h1>
+                        <p class="p10 eleveneleven">Developer</p>
+                        <p class="p11">Enthusiastic, passionate with<br> great sense of humor.</p>
+
+                        <div class="circle eleven">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </div>
+                        <div class="circle eleven">
+                            <i class="fa-brands fa-twitter"></i>
+                        </div>
+                        <div class="circle eleven">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <div class="section9">
+            <div class="class47">
+                <h1>Contact Us</h1>
+            </div>
+
+            <div class="class48">
+                <div class="class51">
+                    <div class="card20">
+                        <div class="card21">
+                            <p>Address</p>
+                        </div>
+                        <div class="card22">
+                            <p>Street 221B Baker Street,<br>
+                                London, UK</p>
+                        </div>
+                    </div>
+
+
+                    <div class="card20">
+                        <div class="card21">
+                            <p>Customer Support</p>
+                        </div>
+                        <div class="card22">
+                            <p>E-mail: contact@site.com<br>
+                                Phone: (555) 555-5555</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="class49">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </div>
+            </div>
+
+            <div class="class50">
+
+                <div class="class54">
+                    <div class="class52">
+                        <p>Your Name (required)</p>
+                        <input class="inp" type="Name" placeholder="">
+                    </div>
+
+                    <div class="class52">
+                        <p>Your Email (required)</p>
+                        <input class="inp" type="Email" placeholder="">
+                    </div>
+
+                    <div class="class52">
+                        <p>Subject</p>
+                        <input class="inp" type="Subject" placeholder="">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="class55">
+                <div class="class53">
+                    <p>Your Message</p>
+                    <input class="inp" type="Comment" placeholder="">
+                </div>
+            </div>
+
+            <div class="class56">
+                <div class="class57">
+                    <BUtton>Send</BUtton>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="section10">
+
+            <div class="class60">
+                <div class="card25">
+                    <h1>PRODUCTS</h1>
+                    <ul>
+                        <li>Our Work</li>
+                        <li>Club</li>
+                        <li>News</li>
+                        <li>Announcement</li>
+                    </ul>
+                </div>
+
+                <div class="card25">
+                    <h1>INFORMATION</h1>
+                    <ul>
+                        <li>Pricing</li>
+                        <li>Terms</li>
+                        <li>Affiliates</li>
+                        <li>Blog</li>
+                    </ul>
+                </div>
+
+                <div class="card25">
+                    <h1>SUPPORT</h1>
+                    <ul>
+                        <li>Documentation</li>
+                        <li>FAQs</li>
+                        <li>Forums</li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="section11">
+            <p> <span style="color: grey;">Theme: Illdy. By: Gouhar Fayyaz</span> © Copyright 2017. All Rights Reserved.
+            </p>
+        </div>
+
+
+
+
+    </div>
+
+</body>
+
+</html>
