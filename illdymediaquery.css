@@ -1,0 +1,280 @@
+@media screen and (max-width: 768px) {
+    .navbar>ul>li {
+        display: none;
+    }
+
+
+    .section1 {
+        height: 500px;
+    }
+
+    .section1>h1 {
+        font-size: 300%;
+        padding-top: 80px;
+    }
+
+    .buttons {
+        padding-top: 40px;
+    }
+
+    .para2 {
+        width: 95%;
+    }
+
+    .section2 {
+        width: 100%;
+    }
+
+    .bars {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .barbox {
+        width: 98%;
+    }
+
+    .picdiv {
+        flex-direction: column;
+    }
+
+    .classone {
+        width: 100%;
+    }
+
+    .box12 {
+        height: 680px;
+    }
+
+    .lbone {
+        left: 40.5%;
+    }
+
+    .lbtwo {
+        left: 44%;
+    }
+
+    .lbthree {
+        left: 48.5%;
+    }
+
+    .lbfour {
+        left: 52%;
+    }
+
+    .box10 {
+        left: 35%;
+    }
+
+    .box106>h1 {
+        left: 35%;
+    }
+
+
+
+    .class2 {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .card1 {
+        width: 90%;
+        padding-bottom: 20px;
+    }
+
+    .card2 {
+        width: 90%;
+        padding-bottom: 28px;
+    }
+
+    .card3 {
+        width: 90%;
+        padding-bottom: 20px;
+    }
+
+    .class4 {
+        flex-direction: column;
+        width: 95%;
+    }
+
+    .pic1>img {
+        width: 100%;
+        height: 200px;
+    }
+
+    .pic2>img {
+        width: 100%;
+        height: 200px;
+    }
+
+    .pic3>img {
+        width: 100%;
+        height: 200px;
+    }
+
+    .card4 {
+        margin-bottom: 30px;
+    }
+
+    .section7 {
+        flex-direction: column;
+    }
+
+    .hr1 {
+        display: none;
+    }
+
+    .hr2 {
+        display: none;
+    }
+
+    .class41 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .class3 {
+        width: 90%;
+    }
+
+    .class51 {
+        flex-direction: column;
+        width: 80%;
+        padding-bottom: 20px;
+    }
+
+    .class48 {
+        flex-direction: column;
+        padding-left: 10px;
+    }
+
+    .class49 {
+        text-align: left;
+        padding-left: 10px;
+    }
+
+
+
+    .class54 {
+        flex-direction: column;
+
+    }
+
+    .class52 {
+        padding-bottom: 20px;
+        width: 100%;
+    }
+
+    .class60 {
+        flex-direction: column;
+        padding-left: 40px;
+    }
+
+    .card25 {
+        padding-bottom: 20px;
+    }
+
+    .section11 {
+        line-height: 35px;
+    }
+
+
+}
+
+
+
+
+@media screen and (max-width: 576px) {
+    .section1 {
+        height: 580px;
+    }
+
+    .section1>h1 {
+        font-size: 300%;
+        padding-top: 40px;
+    }
+
+    .buttons {
+        padding-top: 40px;
+        flex-direction: column;
+        width: 50%;
+        margin-left: 150px;
+        align-items: center;
+    }
+
+    .btn2 {
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+
+    .para2 {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+
+    .section1>h1 {
+        font-size: 200%;
+        padding-top: 40px;
+    }
+
+    .buttons {
+        padding-top: 20px;
+        width: 100%;
+        margin-left: -1px;
+    }
+
+    .btn1 {
+        padding: 10px 60px;
+    }
+
+    .btn2 {
+        padding: 10px 70px;
+    }    
+
+    .card15 {
+        flex-direction: column;
+    }
+
+    .box100{
+        width: 100%;
+        margin-left: -1px;
+    }
+
+    .box12 {
+        height: 680px;
+        width: 100%;
+    }
+
+    .box10 {
+        margin-left: -30px;
+    }
+
+    .box106>h1 {
+        margin-left: -40px;
+    }
+
+    .lbone {
+        left: 30.5%;
+    }
+
+    .lbtwo {
+        left: 40%;
+    }
+
+    .lbthree {
+        left: 50.5%;
+    }
+
+    .lbfour {
+        left: 62%;
+    }
+
+
+
+
+}
+
+
